@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+     <meta charset="utf-8">
+     <title> Spirit animal quiz </title>
+     
+</head>
+
+<body>
+    <h1> Find your spirit animal </h1>
+    <button onclick="newFunction(0)"> Hike and whitewater rafting </button>
+    <button onclick="newFunction(1)"> Netflix and chill </button>
+    <button onclick="newFunction(2)"> Concert  </button>
+    
+    
+    <div>
+        <h3> Assessment </h3>
+        <p id="answer"> </p>
+    </div>
+    
+    <script> 
+        function newFunction(param1){
+            textValue = param1;
+            var alertText= ['hike','netflix','wine']; 
+            alert(textValue);
+            document.getElementById("answer").innerHTML = "you are a netflix type of human";
+        }
+        
+        
+    </script>
+    
+    
+</body>
+
+
+
+
+</html>

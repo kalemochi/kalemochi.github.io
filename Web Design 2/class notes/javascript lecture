@@ -1,0 +1,46 @@
+2/7/19
+
+Managing strings in javascript:
+    var exampleString='single quotes';
+    var exampleString2="Double quotes";
+    var exampleString3='backtick string'; //Call to a variable outside strings
+
+    var exampleNumber= 1;  //when using numbers, no ' ' or " "  not needed
+
+    var exampleBoolean = true;  (write false)
+
+Null
+Undefined
+
+Arrays: every array element has to be all same type
+
+    var array1=['string 1', 'string 2', 'string 3', 'string 4'];
+    var array2= new Array(1,2,3);
+    var array3= new Array();
+
+    array1[0]; //calling an element of an array
+
+
+Functions: keyword 'function'
+
+    function myfirstfunction(){
+        alert('hello world');
+        
+    }
+
+Javascript operators:
+    Same as other operators (+,-,*,/,=,==,&&,||)
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
