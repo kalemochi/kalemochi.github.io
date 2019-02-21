@@ -32,7 +32,34 @@ Javascript operators:
     Same as other operators (+,-,*,/,=,==,&&,||)
     
     
+HTML canvas
     
+
+<script> 
+
+function startLine(){
+setInterval(draw,100);
+
+}
+var canvas= document.getElementById('ourCanvas'); // 
+var ctx= canvas.getContext('2d');
+var startX=0;
+
+function draw(){ // told it to draw a line
+    ctx.beginPath();
+    ctx.moveTo(10,0);
+    ctx.lineTo(10,400);
+    ctx.stroke();
+    ctx.strokeStyle = 'rgb(225, 83, 13, 5)'
+    startX = startX + 1;
+}
+}
+
+</script>
+
+<canvas id="ourCanvas" width=400 height=400> </canvas>
+
+<button onClick="draw()">
 
 
 

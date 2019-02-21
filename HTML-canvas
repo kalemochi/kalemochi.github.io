@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+      <meta charset="utf-8">
+      
+     <title>Faith Mayan | Mood Rings </title>
+     <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+<script> 
+
+var canvas= document.getElementById('ourCanvas'); // 
+var ctx= canvas.getContext('2d');
+var starX=0;
+
+function draw(){ // told it to draw a line
+    ctx.beginPath();
+    ctx.moveTo(10,0);
+    ctx.lineTo(10,400);
+    ctx.stroke();
+}
+}
+
+</script>
+
+<canvas id="ourCanvas" width=400 height=400> </canvas>
+
+<button onClick="draw()">
+
+
+</body>
+</html>
