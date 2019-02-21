@@ -4,12 +4,12 @@
       <meta charset="utf-8">
       
      <title>Faith Mayan | Mood Rings </title>
-     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="style.css">
      
      
    
 </head>
-<body data-gr-c-s-loaded="true" style="background-color: rgb(84, 101, 255);">
+<body data-gr-c-s-loaded="true">
     <h1> My Mood Ring </h1>
     <button id="moodButton" onclick="changeMood()" value="0"> Change my mood </button>
     
@@ -20,12 +20,12 @@
             button= document.getElementById("moodButton");
             if (button.value =='0') {
                 text = "Sad Day Feeling";
-                document.getElemenyById('moodStatement').innerHTML = text;
+                document.getElementById('moodStatement').innerHTML = text;
                 document.body.style.backgroundColor= "5465FF";
                 button.value='1';    
             }   else {
                 text = "Happy Feeling";
-                document.getElemenyById('moodStatement').innerHTML = text;
+                document.getElementById('moodStatement').innerHTML = text;
                 document.body.style.backgroundColor= "#FFF278";
                 button.value='0';
             }
