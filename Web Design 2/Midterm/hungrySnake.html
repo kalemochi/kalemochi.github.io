@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+   <title> The Hungry Snake </title>
+   
+
+</head>
+<body>
+    
+    <div id="score"> 0 </div>
+    <canvas id="mainCanvas" width="500" height="500"> </canvas>
+    <script>
+        const canvas-background= 'blue';
+        const canvas-border = 'blue';
+        const snake-color= 'red';
+        const food-color= 'yellow';
+        
+        let hungrySnake =[{x:150, y:150},{x:140, y:150},{x:130, y:150}, {x:120, y:150},{x:110, y:150}]
+        
+        
+        
+        <!--get canvas element-->
+        var mainCanvas=document.getElementById("mainCanvas");
+        
+        var ctx=mainCanvas.getContext("2d");
+        
+        ctx.fillStyle = canvas-background;
+        ctx.strokeStyle = canvas-border;
+        ctx.fillRect(0, 0, mainCanvas.width, mainCanvas.height);
+        ctx.strokeRect(0, 0, mainCanvas.width, mainCanvas.height);
+        
+        drawSnake();
+        
+        function drawSnake(){
+            hungrySnake.forEach(drawSnakePart)
+        }
+        
+        function drawSnakePart(snakePart){
+            ctx.fillStyle = snake-color;
+            ctx.fillRect(snakePart.x, snakePart.y, 10, 10);
+            ctx.strokeRect(snakePart.x, snakePart.y, 10, 10);
+        }
+    
+    </script>
+        
+        
+
+
+
+</body>
+</html>
+
