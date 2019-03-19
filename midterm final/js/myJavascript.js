@@ -13,10 +13,16 @@
     
     // get the canvas element and return a 2d drwaing context
     var  mainCanvas=document.getElementById("mainCanvas");
+    
     var ctx=mainCanvas.getContext("2d");
+    
     ctx.fillStyle = canvas-background;
-    ctx.strokeStyle = canvas-border;
+    
+    ctx.strokeStyle = 
+    canvas-border;
+    
     ctx.fillRect(0, 0, mainCanvas.width, mainCanvas.height);
+    
     ctx.strokeRect(0, 0, mainCanvas.width, mainCanvas.height);
         
     main ();//main function call starts the game
@@ -28,6 +34,7 @@
     //main function called repeatedly
     function main(){
         if(gameOver())return;
+        
     setTimeout (function onTick()){
         otherDirection = false;
         clearCanvas();
@@ -41,7 +48,7 @@
     
     // function to change background of color and add border
     function clearCanvas() {
-        ctx.fillStyle = canvas-background;
+        ctx.fillStyle = ;
         ctx.strokeStyle = canvas-border;
         ctx.fillRect(0, 0, mainCanvas.width, mainCanvas.height);
         ctx.strokeRect(0, 0, mainCanvas.width, mainCanvas.height);
