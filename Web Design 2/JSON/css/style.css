@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    font-style: normal;
+}
+p{
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+}
+
+#btn { 
+    text-align: center;
+    color: black;
+    
+    
+}
+
+#population {
+    text-align: center;
+}
